@@ -71,6 +71,17 @@ section {
     font-family: 'Roboto', sans-serif;
 }
 
+.check-answer {
+    border: 5px solid #012A60;
+    width: 100px;
+    background-color: #012A60;
+    margin: 10px;
+}
+
+.check-answer p {
+    color: white;
+}
+
 div {
     background-color: white;
 }
