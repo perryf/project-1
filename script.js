@@ -86,6 +86,6 @@ for (i = 0; i < quizQuestions.length; i++) {
 
 oneButton.addEventListener('click', () => {
     function validateAnswer () {
-        if " " === true {
+        if answer ===  {
         }
     }
