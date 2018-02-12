@@ -1,0 +1,76 @@
+h1 {
+    /*font-family: 'Fira Sans', sans-serif;*/
+    font-family: 'Secular One', sans-serif;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #F7DB41;
+    padding: 10px 0px;
+    margin: 5px;
+}
+
+h2 {
+    /*font-family: 'Fira Sans', sans-serif;*/
+    font-family: 'Secular One', sans-serif;
+    font-weight: 600;
+    margin: 10px;
+    text-align: center;
+    color: #012A60;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #012A60;
+}
+
+header p {
+    color: white;
+    margin: -5px;
+    padding: 0px 0px 40px 0px;
+}
+
+header {
+    background-color: #6D000E;
+    margin-bottom: 50px;
+}
+
+body {
+    background-image: url(city-edition-kevin-background-2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: slategray;
+    background-attachment: fixed;
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.question {
+    border: 5px solid #012A60;
+    border-radius: 10px;
+    max-width: 450px;
+    margin: 20px;
+}
+
+.one, .two, .three, .four {
+    margin: 10px;
+    max-width: 500px;
+    width: 450px;
+    flex-wrap: wrap;
+    border: 5px solid #012A60;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+    background-color: white;
+}
