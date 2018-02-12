@@ -60,6 +60,11 @@ section {
     border-radius: 10px;
     max-width: 450px;
     margin: 20px;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 600;
+    margin: 10px;
+    text-align: center;
+    color: #012A60;
 }
 
 .one, .two, .three, .four {

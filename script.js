@@ -6,7 +6,7 @@ one: "1st Round, 5th Pick",/* */
 two: "2nd Round, 32nd Pick",
 three: "1st Round, 19th Pick",
 four: "2nd Round, 48th Pick",
-answer: one
+//answer: one
 },
 
 {question: "Kevin Love was traded to the Cleveland Cavaliers from what team?",
@@ -15,7 +15,7 @@ one: "Chicago Bulls",
 two: "Memphis Grizzlies",/* */
 three: "Minnesota Timberwolves",
 four: "New York Knicks",
-answer: two
+//answer: two
 },
 
 {question: "What was Kevin's number before he switched to '0'?",
@@ -24,7 +24,7 @@ one: "17",
 two: "42",/* */
 three: "23",
 four: "56",
-answer: two
+//answer: two
 },
 
 {question: "What NBA record did Kevin set during the November 23, 2016 game against the Portland Trailblazers?",
@@ -33,7 +33,7 @@ one: "Most points scored in a first quarter",/* */
 two: "Most points scored in a game",
 three: "Most consecutive free throws in a game",
 four: "Most rebounds in a half",
-answer: one
+//answer: one
 },
 
 {question: "Which one of Kevin's Teammates came up with the unofficial team mascot, 'Lil Kev'?",
@@ -42,7 +42,7 @@ one: "Lebron James",
 two: "Tristan Thompson",
 three: "Richard Jefferson",/* */
 four: "Matthew Dellevedova",
-answer: three
+//answer: three
 },
 
 {question: "What was Kevin's 3PT% in the 2016 NBA Playoffs?",
@@ -51,7 +51,7 @@ one: "36.7%",
 two: "41.4%",/* */
 three: "46.8%",
 four: "34.2%",
-answer: two
+//answer: two
 },
 
 {question: "Kevin has been an NBA All-Star ____ times and has participated in ___ All-Star games",
@@ -60,7 +60,7 @@ one: "four, four",
 two: "three, one",
 three: "three, two",
 four: "five, three",/* */
-answer: four
+//answer: four
 },
 
 {question: "Kevin is currently a model for which clothing brand?",
@@ -69,7 +69,7 @@ one: "J. Crew",
 two: "Gap",
 three: "Banana Republic",/* */
 four: "AllSaints",
-answer: three
+//answer: three
 }
 ]
 
@@ -80,12 +80,24 @@ const twoButton = document.querySelector('.two')
 const threeButton = document.querySelector('.three')
 const fourButton = document.querySelector('.four')
 
-for (i = 0; i < quizQuestions.length; i++) { 
+for (i = 0; i < quizQuestions.length; i++) {
+    document.querySelector('#question .question').innerHTML = question;
+    document.querySelector('#answers button.one').innerHTML = one;
+    document.querySelector('#answers button.two').innerHTML = two;
+    document.querySelector('#answers button.three').innerHTML = three;
+    document.querySelector('#answers button.four').innerHTML = four;
+
+
+}
+
+/*for (i = 0; i < quizQuestions.length; i++) { 
     quiz.push(quizQuestions[i]);
 }; 
 
 oneButton.addEventListener('click', () => {
     function validateAnswer () {
-        if answer ===  {
+        if answer === document.querySelector{
+            alert("Correct!");
         }
     }
+*/
