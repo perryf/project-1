@@ -57,3 +57,9 @@ three: "Banana Republic",/* */
 four: "AllSaints"
 }
 ]
+
+//With an array of objects, can set it to easily add more questions? Have questions and answers choices populate fields w/innerHTML? 
+
+for (i = 0; i < quizQuestions.length; i++) { 
+    quiz.push(quizQuestions[i]);
+}

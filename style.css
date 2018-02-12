@@ -32,6 +32,7 @@ header p {
     padding: 0px 0px 40px 0px;
 }
 
+/*Lookup a fix for the header to stretch across, if not possible, Photoshop the header color block on the background image*/
 header {
     background-color: #6D000E;
     margin-bottom: 50px;
