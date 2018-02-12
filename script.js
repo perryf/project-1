@@ -58,7 +58,7 @@ four: "AllSaints"
 }
 ]
 
-const quizQuestions = [
+/* const quizQuestions = [
     "Where was Kevin Love selected in the 2008 NBA Draft?",
     "Kevin Love was traded to the Cleveland Cavaliers from what team?",
     "What was Kevin's number before he switched to '0'?",
@@ -67,11 +67,15 @@ const quizQuestions = [
     "What was Kevin's 3PT% in the 2016 NBA Playoffs?"
     "Kevin has been an NBA All-Star ____ times and has participated in ___ All-Star games",
     "Kevin is currently a model for which clothing brand?"
-]
+]*/
 
 
 
 //With an array of objects, can set it to easily add more questions? Have questions and answers choices populate fields w/innerHTML? 
+const oneButton = document.querySelector('.one')
+const twoButton = document.querySelector('.two')
+const threeButton = document.querySelector('.three')
+const fourButton = document.querySelector('.four')
 
 for (i = 0; i < quizQuestions.length; i++) { 
     quiz.push(quizQuestions[i]);

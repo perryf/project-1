@@ -72,6 +72,26 @@ section {
     font-family: 'Roboto', sans-serif;
 }
 
+.correct {
+        margin: 10px;
+        max-width: 500px;
+        width: 450px;
+        flex-wrap: wrap;
+        border: 5px solid green;
+        border-radius: 10px;
+        font-family: 'Roboto', sans-serif;
+}
+
+.incorrect {
+    margin: 10px;
+    max-width: 500px;
+    width: 450px;
+    flex-wrap: wrap;
+    border: 5px solid red;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
 div {
     background-color: white;
 }
