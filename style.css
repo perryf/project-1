@@ -61,6 +61,7 @@ section {
     max-width: 450px;
     margin: 20px;
     font-family: 'Secular One', sans-serif;
+    font-size: 25px;
     font-weight: 600;
     margin: 10px;
     text-align: center;
@@ -80,6 +81,7 @@ section {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #012A60;
+    padding: 15px;
 }
 
 .correct {
