@@ -58,8 +58,22 @@ four: "AllSaints"
 }
 ]
 
+const quizQuestions = [
+    "Where was Kevin Love selected in the 2008 NBA Draft?",
+    "Kevin Love was traded to the Cleveland Cavaliers from what team?",
+    "What was Kevin's number before he switched to '0'?",
+    "What NBA record did Kevin set during the November 23, 2016 game against the Portland Trailblazers?",
+    "Which one of Kevin's Teammates came up with the unofficial team mascot, 'Lil Kev'?",   
+    "What was Kevin's 3PT% in the 2016 NBA Playoffs?"
+    "Kevin has been an NBA All-Star ____ times and has participated in ___ All-Star games",
+    "Kevin is currently a model for which clothing brand?"
+]
+
+
+
 //With an array of objects, can set it to easily add more questions? Have questions and answers choices populate fields w/innerHTML? 
 
 for (i = 0; i < quizQuestions.length; i++) { 
     quiz.push(quizQuestions[i]);
-}
+}; 
+
