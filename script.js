@@ -69,9 +69,8 @@ four: "AllSaints"
     "Kevin is currently a model for which clothing brand?"
 ]*/
 
-
-
 //With an array of objects, can set it to easily add more questions? Have questions and answers choices populate fields w/innerHTML? 
+
 const oneButton = document.querySelector('.one')
 const twoButton = document.querySelector('.two')
 const threeButton = document.querySelector('.three')
@@ -81,3 +80,10 @@ for (i = 0; i < quizQuestions.length; i++) {
     quiz.push(quizQuestions[i]);
 }; 
 
+oneButton.addEventListener('click', () => {
+    function validateAnswer () {
+        if " " === true {
+            alert("Correct!");
+            border: 5px solid #012A60;
+        }
+    }

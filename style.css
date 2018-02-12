@@ -53,6 +53,7 @@ section {
     align-items: center;
     align-content: center;
     flex-direction: column;
+    margin: 50px;
 }
 
 .question {
