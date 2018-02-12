@@ -81,13 +81,11 @@ const threeButton = document.querySelector('.three')
 const fourButton = document.querySelector('.four')
 
 for (i = 0; i < quizQuestions.length; i++) {
-    document.querySelector('#question .question').innerHTML = question;
-    document.querySelector('#answers button.one').innerHTML = one;
-    document.querySelector('#answers button.two').innerHTML = two;
-    document.querySelector('#answers button.three').innerHTML = three;
-    document.querySelector('#answers button.four').innerHTML = four;
-
-
+    document.querySelector('#question .question').innerHTML = quizQuestions[i].question;
+    document.querySelector('#answers .one').innerHTML = quizQuestions[i].one;
+    document.querySelector('#answers .two').innerHTML = quizQuestions[i].two;
+    document.querySelector('#answers .three').innerHTML = quizQuestions[i].three;
+    document.querySelector('#answers .four').innerHTML = quizQuestions[i].four;
 }
 
 /*for (i = 0; i < quizQuestions.length; i++) { 
