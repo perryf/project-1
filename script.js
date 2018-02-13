@@ -79,14 +79,43 @@ const oneButton = document.querySelector('.one')
 const twoButton = document.querySelector('.two')
 const threeButton = document.querySelector('.three')
 const fourButton = document.querySelector('.four')
+let localAnswer = 
 
-for (i = 0; i < quizQuestions.length; i++) {
+function startQuiz () {
+    document.querySelector('#question .question').innerHTML = quizQuestions[0].question;
+    document.querySelector('#answers .one').innerHTML = quizQuestions[0].one;
+    document.querySelector('#answers .two').innerHTML = quizQuestions[0].two;
+    document.querySelector('#answers .three').innerHTML = quizQuestions[0].three;
+    document.querySelector('#answers .four').innerHTML = quizQuestions[0].four;
+
+    oneButton.addEventListener('click', () => {
+        localAnswer = one;
+    }
+    twoButton.addEventListener('click', () => {
+        localAnswer = one;
+    }
+    threeButton.addEventListener('click', () => {
+        localAnswer = one;
+    }
+    fourButton.addEventListener('click', () => {
+        localAnswer = one;
+    }
+
+    function validateAnswer () {
+        if localAnswer === answer {
+            alert ("correct!");
+        } else {
+            alert ("incorrect!");
+        }
+    }
+
+/* (AFTER THE FIRST QUESTION) for (i = 0; i < quizQuestions.length; i++) {
     document.querySelector('#question .question').innerHTML = quizQuestions[i].question;
     document.querySelector('#answers .one').innerHTML = quizQuestions[i].one;
     document.querySelector('#answers .two').innerHTML = quizQuestions[i].two;
     document.querySelector('#answers .three').innerHTML = quizQuestions[i].three;
     document.querySelector('#answers .four').innerHTML = quizQuestions[i].four;
-}
+}*/
 
 /*for (i = 0; i < quizQuestions.length; i++) { 
     quiz.push(quizQuestions[i]);
