@@ -18,14 +18,6 @@ h2 {
     color: #012A60;
 }
 
-#submit {
-    display: inline;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-
 p {
     text-align: center;
     font-size: 16px;
@@ -90,6 +82,25 @@ section {
     font-weight: 300;
     color: #012A60;
     padding: 15px;
+}
+
+.submit, .next {
+    margin: 10px;
+    max-width: 200px;
+    width: 200px;
+    flex-wrap: wrap;
+    border: 5px solid #012A60;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-color: #012A60;
+    padding: 15px;
+}
+
+.submit p, .next p {
+    color: white;
 }
 
 .one:focus, .two:focus, .three:focus, .four:focus {
