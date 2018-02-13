@@ -106,6 +106,7 @@ section {
     font-weight: 300;
     color: #012A60;
     padding: 15px;
+    outline: none;
 }
 
 .correct {
