@@ -75,28 +75,26 @@ answer: "three"
 
 //With an array of objects, can set it to easily add more questions? Have questions and answers choices populate fields w/innerHTML? 
 
-const oneButton = document.querySelector('.one')
-const twoButton = document.querySelector('.two')
-const threeButton = document.querySelector('.three')
-const fourButton = document.querySelector('.four')
-const submitButton = document.querySelector('.submit')
-let localAnswer = 
+//Creating the buttons
+const oneButton = document.querySelector('#answers .one')
+const twoButton = document.querySelector('#answers .two')
+const threeButton = document.querySelector('#answers .three')
+const fourButton = document.querySelector('#answers .four')
+const submitButton = document.querySelector('#submit .submit')
+//Creating a variable to check the answers
+let localAnswer = ""
 
-/*function validateAnswer() {
-    if (localAnswer = answer) {
-        alert ("correct!");
-    } else {
-        alert ("incorrect!");
-    }
-}*/
-
+//Initializing quiz
 function startQuiz() {
+    //Pushing the values to display in the HTML element
     document.querySelector('#question .question').innerHTML = quizQuestions[0].question;
     document.querySelector('#answers .one').innerHTML = quizQuestions[0].one;
     document.querySelector('#answers .two').innerHTML = quizQuestions[0].two;
     document.querySelector('#answers .three').innerHTML = quizQuestions[0].three;
     document.querySelector('#answers .four').innerHTML = quizQuestions[0].four;
+    quizQuestions[0].answer;
 
+    //When clicked, the variable localAnswer is set to check against the actual answer
     oneButton.addEventListener('click', () => {
         localAnswer = "one";
     })
@@ -110,16 +108,18 @@ function startQuiz() {
         localAnswer = "four";
     })
     
+    //Creating a function so that when the submit button is clicked, it checks if the answers match up 
     submitButton.addEventListener('click', () => {
         function validateAnswer() {
-            if (localAnswer === answer) {
+            if (localAnswer = quizQuestions[0].answer) {
                 alert ("correct!");
             } else {
                 alert ("incorrect!");
             }
     }
-})
-validateAnswer();
+    //Running the validation function 
+    validateAnswer();})
+
 }
 startQuiz();
 
