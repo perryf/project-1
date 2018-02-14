@@ -117,33 +117,25 @@ function startQuiz() {
     
     
 }
-function validate () {
-    //Creating a function so that when the submit button is clicked, it checks if the answers match up 
+    //Creating a function so that when the submit button is clicked, it checks if the answers match up and moves to the next question
     submitButton.addEventListener('click', () => {
-      
       function validateAnswer() {
           if (localAnswer === quizQuestions[i].answer) {
               alert("Correct!");
               i++
-              console.log(localAnswer)
               startQuiz();
           } else {
               alert("Incorrect!"); 
               i++
-              console.log(localAnswer)
               startQuiz();
           }
   }
-  
-  //Running the validation function 
+  //Calling the function
   validateAnswer();
-  })   
-}
+})
+     
 
+//Initializing the quiz
 startQuiz();
-validate();
 
-
-
-//CHANGE THE INDEX. NO FOR LOOP! 
 
