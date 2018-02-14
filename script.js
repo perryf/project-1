@@ -91,8 +91,6 @@ const quizQuestions = [
         }
         ]
         
-        //With an array of objects, can set it to easily add more questions? Populate fields w/innerHTML? 
-        
         //Creating the buttons
         const oneButton = document.querySelector('#answers .one')
         const twoButton = document.querySelector('#answers .two')
@@ -128,7 +126,6 @@ const quizQuestions = [
             score.innerHTML = "Wrong!"
         }
     
-        
         //Function to run through quiz
         function startQuiz() {
         
@@ -159,22 +156,18 @@ const quizQuestions = [
         submitButton.addEventListener('click', () => {
               function validateAnswer() {
                   if (localAnswer === quizQuestions[i].answer) {
-                      //alert("Correct!");
                       addCorrect();
                       i++
                       stopQuiz();
-                  } else {
-                      //alert("Incorrect!"); 
+                  } else { 
                       notCorrect();
                       i++
                       stopQuiz();
                   }
           }
-        //Calling the function
-        validateAnswer();
+                validateAnswer();
         })
              
-        
         //Initializing the quiz
         startQuiz();
         
