@@ -4,11 +4,24 @@ h1 {
     font-weight: 600;
     letter-spacing: 4px;
     text-align: center;
-    color: #F7DB41;
+    /*color: #F7DB41;*/
+    color: #6D000E;
     padding: 10px 0px;
-    margin: 5px;
+    /*margin: 5px;*/
 }
 
+.correct {
+    /*color: #6D000E;*/
+    color: #F7DB41;
+    font-family: 'Secular One', sans-serif;
+    font-size: 22px;
+    width: 200px;
+    text-align: center;
+}
+
+#counter .correct {
+    background: none;
+}
 
 h2 {
     font-family: 'Secular One', sans-serif;
@@ -27,16 +40,14 @@ p {
 }
 
 
-header p {
+#header p {
     color: white;
     margin: -5px;
-    padding: 0px 0px 40px 0px;
+    padding: 0px 0px 20px 0px;
 }
 
 /*Lookup a fix for the header to stretch across, if not possible, Photoshop the header color block on the background image*/
-header {
-    background-color: #6D000E;
-}
+
 
 body {
     background-image: url(city-edition-kevin-compressed.jpg);
@@ -53,16 +64,19 @@ section {
     align-items: center;
     align-content: center;
     flex-direction: column;
-    margin: 50px 50px 0px 50px;
+    margin: 10px 30px 0px 30px;
 }
 
+#question .question {
+    padding: 10px;
+}
 .question {
     border: 5px solid #012A60;
     border-radius: 10px;
     max-width: 450px;
     margin: 10px;
     font-family: 'Secular One', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     text-align: center;
     color: #012A60;
