@@ -2,7 +2,7 @@ const quizQuestions = [
 
         {question: "Where was Kevin selected in the <br>2008 NBA Draft?",
         
-        one: "1st Round, 5th Pick",/* */
+        one: "1st Round, 5th Pick",
         two: "2nd Round, 32nd Pick",
         three: "1st Round, 19th Pick",
         four: "2nd Round, 48th Pick",
@@ -12,7 +12,7 @@ const quizQuestions = [
         {question: "Kevin was traded to the Cleveland Cavaliers from what team?",
         
         one: "Chicago Bulls",
-        two: "Memphis Grizzlies",/* */
+        two: "Memphis Grizzlies",
         three: "Minnesota Timberwolves",
         four: "New York Knicks",
         answer: "three"
@@ -21,7 +21,7 @@ const quizQuestions = [
         {question: "What was Kevin's number before he switched to '0'?",
         
         one: "17",
-        two: "42",/* */
+        two: "42",
         three: "23",
         four: "56",
         answer: "two"
@@ -29,7 +29,7 @@ const quizQuestions = [
         
         {question: "What NBA record did Kevin set during the November 23, 2016 game against the Portland Trailblazers?",
         
-        one: "Most points scored in a first quarter",/* */
+        one: "Most points scored in a first quarter",
         two: "Most points scored in a game",
         three: "Most consecutive free throws in a game",
         four: "Most rebounds in a half",
@@ -40,7 +40,7 @@ const quizQuestions = [
         
         one: "Lebron James",
         two: "Tristan Thompson",
-        three: "Richard Jefferson",/* */
+        three: "Richard Jefferson",
         four: "Matthew Dellevedova",
         answer: "three"
         },
@@ -48,7 +48,7 @@ const quizQuestions = [
         {question: "What was Kevin's 3PT% in the <br>2016 NBA Playoffs?",
         
         one: "36.7%",
-        two: "41.4%",/* */
+        two: "41.4%",
         three: "46.8%",
         four: "34.2%",
         answer: "two"
@@ -59,7 +59,7 @@ const quizQuestions = [
         one: "four, four",
         two: "three, one",
         three: "three, two",
-        four: "five, three",/* */
+        four: "five, three",
         answer: "four"
         },
         
@@ -67,7 +67,7 @@ const quizQuestions = [
         
         one: "J. Crew",
         two: "Gap",
-        three: "Banana Republic",/* */
+        three: "Banana Republic",
         four: "AllSaints",
         answer: "three"
         },
@@ -76,7 +76,7 @@ const quizQuestions = [
         
         one: "Terry Rozier",
         two: "Jonas Jerebko",
-        three: "Kelly Olynyk",/* */
+        three: "Kelly Olynyk",
         four: "Isaiah Thomas",
         answer: "three"
         },
@@ -85,7 +85,7 @@ const quizQuestions = [
         
         one: "Don't get this wrong.",
         two: "<em><strong>Kevin Love</strong></em>",
-        three: "Seriously don't.",/* */
+        three: "Seriously don't.",
         four: "NO!",
         answer: "two"
         }
@@ -102,6 +102,8 @@ const quizQuestions = [
         
         //Creating a variable to check the answers
         let localAnswer = ""
+        
+        //Setting up i to run through questions
         let i = 0
         
         //To display the number of questions correct in the counter
@@ -126,6 +128,7 @@ const quizQuestions = [
             score.innerHTML = "Wrong!"
         }
     
+        
         //Function to run through quiz
         function startQuiz() {
         
