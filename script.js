@@ -15,7 +15,7 @@ one: "Chicago Bulls",
 two: "Memphis Grizzlies",/* */
 three: "Minnesota Timberwolves",
 four: "New York Knicks",
-answer: "two"
+answer: "three"
 },
 
 {question: "What was Kevin's number before he switched to '0'?",
@@ -73,7 +73,7 @@ answer: "three"
 }
 ]
 
-//With an array of objects, can set it to easily add more questions? Have questions and answers choices populate fields w/innerHTML? 
+//With an array of objects, can set it to easily add more questions? Populate fields w/innerHTML? 
 
 //Creating the buttons
 const oneButton = document.querySelector('#answers .one')
@@ -83,17 +83,29 @@ const fourButton = document.querySelector('#answers .four')
 const submitButton = document.querySelector('#submit .submit')
 //Creating a variable to check the answers
 let localAnswer = ""
+let i = 0
+
+
 
 //Initializing quiz
 function startQuiz() {
+//for (i = 0; i < quizQuestions.length; i++) {
     //Pushing the values to display in the HTML element
-    document.querySelector('#question .question').innerHTML = quizQuestions[0].question;
-    document.querySelector('#answers .one').innerHTML = quizQuestions[0].one;
-    document.querySelector('#answers .two').innerHTML = quizQuestions[0].two;
-    document.querySelector('#answers .three').innerHTML = quizQuestions[0].three;
-    document.querySelector('#answers .four').innerHTML = quizQuestions[0].four;
-    quizQuestions[0].answer;
-
+    
+    document.querySelector('#question .question').innerHTML = quizQuestions[i].question;
+    document.querySelector('#answers .one').innerHTML = quizQuestions[i].one;
+    document.querySelector('#answers .two').innerHTML = quizQuestions[i].two;
+    document.querySelector('#answers .three').innerHTML = quizQuestions[i].three;
+    document.querySelector('#answers .four').innerHTML = quizQuestions[i].four;
+    quizQuestions[i].answer;
+    function validateAnswer() {
+        if (localAnswer === quizQuestions[i].answer) {
+            alert ("Correct!");
+        } else {
+            alert ("Incorrect!");
+        }
+}
+    
     //When clicked, the variable localAnswer is set to check against the actual answer
     oneButton.addEventListener('click', () => {
         localAnswer = "one";
@@ -111,35 +123,25 @@ function startQuiz() {
     //Creating a function so that when the submit button is clicked, it checks if the answers match up 
     submitButton.addEventListener('click', () => {
         function validateAnswer() {
-            if (localAnswer = quizQuestions[0].answer) {
-                alert ("correct!");
+            if (localAnswer === quizQuestions[i].answer) {
+                alert ("Correct!");
+                startQuiz(i++);
             } else {
-                alert ("incorrect!");
+                alert ("Incorrect!");
             }
     }
     //Running the validation function 
-    validateAnswer();})
-
+    validateAnswer();
+    
+    
+    })   
+    
 }
+
+//CHANGE THE INDEX. NO FOR LOOP! 
+function nextQuestion() {
+    i = i ++;
+}
+nextQuestion();
 startQuiz();
 
-    
-/* (AFTER THE FIRST QUESTION) for (i = 0; i < quizQuestions.length; i++) {
-    document.querySelector('#question .question').innerHTML = quizQuestions[i].question;
-    document.querySelector('#answers .one').innerHTML = quizQuestions[i].one;
-    document.querySelector('#answers .two').innerHTML = quizQuestions[i].two;
-    document.querySelector('#answers .three').innerHTML = quizQuestions[i].three;
-    document.querySelector('#answers .four').innerHTML = quizQuestions[i].four;
-}*/
-
-/*for (i = 0; i < quizQuestions.length; i++) { 
-    quiz.push(quizQuestions[i]);
-}; 
-
-oneButton.addEventListener('click', () => {
-    function validateAnswer () {
-        if answer === document.querySelector{
-            alert("Correct!");
-        }
-    }
-*/
