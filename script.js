@@ -1,6 +1,6 @@
 const quizQuestions = [
 
-        {question: "Where was Kevin selected in the 2008 NBA Draft?",
+        {question: "Where was Kevin selected in the <br>2008 NBA Draft?",
         
         one: "1st Round, 5th Pick",/* */
         two: "2nd Round, 32nd Pick",
@@ -36,7 +36,7 @@ const quizQuestions = [
         answer: "one"
         },
         
-        {question: "Which one of Kevin's Teammates came up with the unofficial team mascot, 'Lil Kev'?",
+        {question: "Which Cavs player came up with the unofficial team mascot, 'Lil Kev'?",
         
         one: "Lebron James",
         two: "Tristan Thompson",
@@ -45,7 +45,7 @@ const quizQuestions = [
         answer: "three"
         },
         
-        {question: "What was Kevin's 3PT% in the 2016 NBA Playoffs?",
+        {question: "What was Kevin's 3PT% in the <br>2016 NBA Playoffs?",
         
         one: "36.7%",
         two: "41.4%",/* */
@@ -104,16 +104,15 @@ const quizQuestions = [
         let localAnswer = ""
         let i = 0
         
+        //To display the number of questions correct in the counter
         let numberCorrect = 0
         var score = document.querySelector('#counter .correct')
-        
-        //To display the number of questions correct in the counter
         function addCorrect() {
             numberCorrect += 1 
             score.innerHTML = numberCorrect + "/10"
         }
     
-        //Check if quiz should keep going, if not give player their total
+        //Check if quiz should keep going -- if not, give player their total
         function stopQuiz() {
            if (i === 10) {
                score.innerHTML = "Finished! <br>Total: " + numberCorrect + "/10"
