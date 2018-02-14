@@ -84,7 +84,6 @@ section {
 }
 
 .submit {
-    margin: 5px;
     max-width: 200px;
     width: 150px;
     flex-wrap: wrap;

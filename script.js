@@ -54,7 +54,7 @@ four: "34.2%",
 answer: "two"
 },
 
-{question: "Kevin has been an NBA All-Star ____ times and has participated in ___ All-Star games",
+{question: "Kevin has been an NBA All-Star ______ times and has participated in _____ All-Star games",
 
 one: "four, four",
 two: "three, one",
@@ -85,63 +85,65 @@ const submitButton = document.querySelector('#submit .submit')
 let localAnswer = ""
 let i = 0
 
-
-
-//Initializing quiz
+function newQuestion() {
+    startQuiz(); 
+}
+//Function to run through quiz
 function startQuiz() {
-//for (i = 0; i < quizQuestions.length; i++) {
+
     //Pushing the values to display in the HTML element
-    
     document.querySelector('#question .question').innerHTML = quizQuestions[i].question;
     document.querySelector('#answers .one').innerHTML = quizQuestions[i].one;
     document.querySelector('#answers .two').innerHTML = quizQuestions[i].two;
     document.querySelector('#answers .three').innerHTML = quizQuestions[i].three;
     document.querySelector('#answers .four').innerHTML = quizQuestions[i].four;
     quizQuestions[i].answer;
-    function validateAnswer() {
-        if (localAnswer === quizQuestions[i].answer) {
-            alert ("Correct!");
-        } else {
-            alert ("Incorrect!");
-        }
-}
+    
     
     //When clicked, the variable localAnswer is set to check against the actual answer
     oneButton.addEventListener('click', () => {
-        localAnswer = "one";
+            localAnswer = "one";
     })
     twoButton.addEventListener('click', () => {
-        localAnswer = "two";
+            localAnswer = "two";
     })
     threeButton.addEventListener('click', () => {
-        localAnswer = "three";
+            localAnswer = "three";
     })
     fourButton.addEventListener('click', () => {
-        localAnswer = "four";
+            localAnswer = "four";
     })
     
+    
+    
+}
+function validate () {
     //Creating a function so that when the submit button is clicked, it checks if the answers match up 
     submitButton.addEventListener('click', () => {
-        function validateAnswer() {
-            if (localAnswer === quizQuestions[i].answer) {
-                alert ("Correct!");
-                startQuiz(i++);
-            } else {
-                alert ("Incorrect!");
-            }
-    }
-    //Running the validation function 
-    validateAnswer();
-    
-    
-    })   
-    
+      
+      function validateAnswer() {
+          if (localAnswer === quizQuestions[i].answer) {
+              alert("Correct!");
+              i++
+              console.log(localAnswer)
+              startQuiz();
+          } else {
+              alert("Incorrect!"); 
+              i++
+              console.log(localAnswer)
+              startQuiz();
+          }
+  }
+  
+  //Running the validation function 
+  validateAnswer();
+  })   
 }
 
-//CHANGE THE INDEX. NO FOR LOOP! 
-function nextQuestion() {
-    i = i ++;
-}
-nextQuestion();
 startQuiz();
+validate();
+
+
+
+//CHANGE THE INDEX. NO FOR LOOP! 
 
