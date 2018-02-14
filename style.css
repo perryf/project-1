@@ -91,24 +91,11 @@ div {
 }
 
 .one:focus, .two:focus, .three:focus, .four:focus {
-    margin: 10px;
-    max-width: 500px;
-    width: 450px;
-    flex-wrap: wrap;
     border: 5px solid #F7DB41;
-    border-radius: 10px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    color: #012A60;
-    padding: 15px;
     outline: none;
 }
 
 .submit {
-    max-width: 200px;
     width: 150px;
     flex-wrap: wrap;
     border: 5px solid #012A60;
@@ -118,10 +105,12 @@ div {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     background-color: #012A60;
-}
-
-.submit p {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     color: white;
+    padding: 10px;
 }
 
 .submit:focus {
