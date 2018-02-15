@@ -91,20 +91,18 @@ const quizQuestions = [
         }
         ]
         
-        //Creating the buttons
+
         const oneButton = document.querySelector('#answers .one')
         const twoButton = document.querySelector('#answers .two')
         const threeButton = document.querySelector('#answers .three')
         const fourButton = document.querySelector('#answers .four')
         const submitButton = document.querySelector('#submit .submit')
         
-        //Creating a variable to check the answers
+      
         let localAnswer = ""
-        
-        //Setting up i to run through questions
         let i = 0
         
-        //To display the number of questions correct in the counter
+        
         let numberCorrect = 0
         var score = document.querySelector('#counter .correct')
         function addCorrect() {
@@ -112,7 +110,7 @@ const quizQuestions = [
             score.innerHTML = numberCorrect + "/10"
         }
     
-        //Check if quiz should keep going -- if not, give player their total
+        
         function stopQuiz() {
            if (i === 10) {
                score.innerHTML = "Finished! <br>Total: " + numberCorrect + "/10"
@@ -121,15 +119,15 @@ const quizQuestions = [
            }
         }
     
-        //To inform the player they got a question wrong
+        
         function notCorrect() {
             score.innerHTML = "Wrong!"
         }
     
-        //Function to run through quiz
+        
         function startQuiz() {
         
-            //Pushing the values to display in the HTML element
+            
             document.querySelector('#question .question').innerHTML = quizQuestions[i].question;
             oneButton.innerHTML = quizQuestions[i].one;
             twoButton.innerHTML = quizQuestions[i].two;
@@ -138,7 +136,7 @@ const quizQuestions = [
             quizQuestions[i].answer;
             
             
-            //When clicked, the variable localAnswer is set to check against the actual answer
+            
             oneButton.addEventListener('click', () => {
                     localAnswer = "one";
             })
@@ -152,7 +150,7 @@ const quizQuestions = [
                     localAnswer = "four";
             })  
         }
-        //Creating a function so that when the submit button is clicked, it checks if the answers match up and moves to the next question
+        
         submitButton.addEventListener('click', () => {
               function validateAnswer() {
                   if (localAnswer === quizQuestions[i].answer) {
@@ -167,7 +165,7 @@ const quizQuestions = [
           }
                 validateAnswer();
         })
-             
-        //Initializing the quiz
-        startQuiz();
+                     
+        
+    startQuiz();
         
