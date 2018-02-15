@@ -1,16 +1,16 @@
-# project-1
+# Project 1
 
-## Javascript Trivia Game
+# Javascript Trivia Game
 
 A simple trivia game about the 2nd best player on the Cleveland Cavaliers, Kevin Love. The game starts when the browser loads and the player selects their answer, submits it, and is directed to the next question where they will be informed if their guess is right or wrong. 
 
-# Technologies Used: 
+## Technologies Used: 
 - HTML 
 - CSS 
 - Javascript
 - Adobe Photoshop (for design and creating the background image)
 
-# Approach Taken: 
+## Approach Taken: 
 I had an immediate vision for the design/layout so I did that first and focused on the Javascript after that. I initially was going to put all the questions on one page but it would be a lot less cluttered if I cycled through the questions. 
 
 My initial goals were:
@@ -22,8 +22,8 @@ My initial goals were:
 
 Once I finished those, I ended up adjusting styling, changing content, adding a counter and removing the alert by allowing the counter to display if the selected answer was wrong. 
 
-# Installation Instructions: 
+## Installation Instructions: 
 None, loads in the browswer
 
-# Unsolved problems: 
+## Unsolved Problems: 
 There aren't any problems with the submitted project. However, I wanted to add a "Try Again" button at the end that takes the user back to the beginning but it wasn't working out. 
