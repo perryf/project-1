@@ -105,6 +105,7 @@ const quizQuestions = [
         
         let numberCorrect = 0
         var score = document.querySelector('#counter .correct')
+        
         function addCorrect() {
             numberCorrect += 1 
             score.innerHTML = numberCorrect + "/10"
@@ -124,7 +125,6 @@ const quizQuestions = [
             score.innerHTML = "Wrong!"
         }
     
-        
         function startQuiz() {
         
             
