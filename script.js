@@ -111,10 +111,22 @@ const quizQuestions = [
             score.innerHTML = numberCorrect + "/10"
         }
     
+        /*function startOver() {
+            submitButton.innerHTML = "Try Again?"
+            submitButton.addEventListener('click', () => {
+                let i = 0;
+                let numberCorrect = 0
+                var score = document.querySelector('#counter .correct')
+                let localAnswer = ""
+                submitButton.innerHTML = "Submit"
+                startQuiz();   
+            })
+        }*/
         
         function stopQuiz() {
            if (i === 10) {
                score.innerHTML = "Finished! <br>Total: " + numberCorrect + "/10"
+               //startOver();
             } else {
                startQuiz();
            }
@@ -124,7 +136,7 @@ const quizQuestions = [
         function notCorrect() {
             score.innerHTML = "Wrong!"
         }
-    
+
         function startQuiz() {
         
             
@@ -153,13 +165,17 @@ const quizQuestions = [
         
         submitButton.addEventListener('click', () => {
               function validateAnswer() {
-                  if (localAnswer === quizQuestions[i].answer) {
+                 if (localAnswer === "") {
+                     score.innerHTML = "Pick an answer!"
+                 } else if (localAnswer === quizQuestions[i].answer) {
                       addCorrect();
                       i++
+                      localAnswer = ""
                       stopQuiz();
                   } else { 
                       notCorrect();
                       i++
+                      localAnswer = ""
                       stopQuiz();
                   }
           }
@@ -168,4 +184,5 @@ const quizQuestions = [
                      
         
     startQuiz();
-        
+
+//replace submit button to do a reset button 
