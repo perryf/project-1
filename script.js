@@ -114,12 +114,11 @@ const quizQuestions = [
         /*function startOver() {
             submitButton.innerHTML = "Try Again?"
             submitButton.addEventListener('click', () => {
-                let i = 0;
+                let i = 0
                 let numberCorrect = 0
-                var score = document.querySelector('#counter .correct')
+                //var score = document.querySelector('#counter .correct')
                 let localAnswer = ""
-                submitButton.innerHTML = "Submit"
-                startQuiz();   
+                submitButton.innerHTML = "Submit"  
             })
         }*/
         
@@ -127,14 +126,10 @@ const quizQuestions = [
            if (i === 10) {
                score.innerHTML = "Finished! <br>Total: " + numberCorrect + "/10"
                //startOver();
+               //startQuiz();
             } else {
                startQuiz();
            }
-        }
-    
-        
-        function notCorrect() {
-            score.innerHTML = "Wrong!"
         }
 
         function startQuiz() {
@@ -173,7 +168,7 @@ const quizQuestions = [
                       localAnswer = ""
                       stopQuiz();
                   } else { 
-                      notCorrect();
+                      score.innerHTML = "Wrong!"
                       i++
                       localAnswer = ""
                       stopQuiz();
