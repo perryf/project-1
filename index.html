@@ -7,29 +7,38 @@
     <title>Kevin Love Trivia</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Secular+One" rel="stylesheet">
-    <link rel="icon" href="icon-logo-2.png">
+    <link rel="icon" href="icon-logo-2.png"> <!-- Nice touch! -->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <section id="header">
+    <section id="header"> <!-- Change this to a `header` tag -->
         <h1>KEVIN LOVE TRIVIA</h1>
-        <p>Think you're a bigger Kevin Love fan than I am? You're definitely not.<br>If you want to pretend that you are -- make sure you get every question right on this quiz.</p>
+        <p>Think you're a bigger Kevin Love fan than I am? You're definitely not.
+            <br>If you want to pretend that you are -- make sure you get every question right on this quiz.
+        </p> <!-- Im not a fan of line breaks, I would make this two separate p tags -->
     </section>
-        <section id="counter">
-            <div class="correct"></div>
-        </section>
-        <section id="question">
-        <div class="question"><h2>Where was Kevin Love selected in the 2008 NBA Draft?</h2></div>
-        </section>
-        <section id="answers">
-            <button class="one" type="submit"></button>
-            <button class="two" type="submit"></button>
-            <button class="three" type="submit"></button>
-            <button class="four" type="submit"></button>
-        </section>
-        <section id="submit">
-            <button class ="submit" type="submit">Submit</button>
-        </section>
+    <section id="counter">
+        <div class="correct"></div>
+    </section>
+    <section id="question">
+        <div class="question">
+            <h2>Where was Kevin Love selected in the 2008 NBA Draft?</h2>
+        </div>
+    </section>
+    <section id="answers">
+        <button class="one" type="submit"></button>
+        <button class="two" type="submit"></button>
+        <button class="three" type="submit"></button>
+        <button class="four" type="submit"></button>
+        <!-- Usually type="submit" is reserved for forms. You can just tape that off of the buttons since your listening for a `click` event anyways -->
+    </section>
+    <section id="submit">
+        <button class ="submit" type="submit">Submit</button>
+    </section>
     <script src="script.js"></script>
-    </body>
+</body>
 </html>
+<!-- Good job on the html! -->
+<!-- For the most part, html is intuitive, and uses good semantic classnames -->
+<!-- I like the minimal approach to the game as well.  It looks really good! -->
+<!-- I would be tempted to put the all the game logic into like a `main` tag that encapsulates all the buttons, etc -->

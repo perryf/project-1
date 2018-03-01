@@ -1,9 +1,9 @@
 h1 {
     font-family: 'Secular One', sans-serif;
     font-weight: 600;
-    letter-spacing: 4px;
+    letter-spacing: 4px; /* Good attention to detail on the lettering */
     text-align: center;
-    color: #F7DB41;
+    color: #F7DB41; /* Good color choice */
     padding: 10px 0px;
 }
 
@@ -29,15 +29,15 @@ p {
     margin: -5px;
     padding: 0px 0px 20px 0px;
 }
-
+/* Typically you put id selectors at the bottom of the page */
 body {
     background-image: url(city-edition-kevin-compressed.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: slategray;
     background-attachment: fixed;
-}
-
+} /* Great work making the background and positioning it! */
+/* body should go at the top.  Then I'd put your other sections/divs/then your h1/h2/p then classes, then ids */
 section {
     display: flex;
     justify-content: center;
@@ -75,11 +75,11 @@ div {
     background: none;
 }
 
-.one, .two, .three, .four {
+.one, .two, .three, .four { /* Give all the buttons one common class to reduce the amount you are selecting */
     margin: 10px;
     max-width: 500px;
     width: 450px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* I dont think this is doing anything */
     border: 5px solid #012A60;
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
@@ -89,7 +89,7 @@ div {
     color: #012A60;
     padding: 15px;
 }
-
+/* There is a little bit of overlap styling of the question and the answer choices. You could give them one shared class to reduce the size of this file */
 .one:focus, .two:focus, .three:focus, .four:focus {
     border: 5px solid #F7DB41;
     outline: none;
@@ -112,3 +112,6 @@ div {
 .submit:focus {
     outline: none;
 }
+
+/* Nice job here on the CSS! */
+/* Only thing I would really suggest is looking into media queries for smaller screen sizes */
